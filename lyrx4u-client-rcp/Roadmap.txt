@@ -1,0 +1,18 @@
+RCP GUI roadmap:
+
+1st phase implementation
+- implement all views and link them to the application model
+- make sure that they appear
+- implement event handling (via event broker, etc.)
+- make menus appear conditionally
+- link to the backend services, and implement missing backend services
+
+2nd phase implementation
+- check GUI in Git
+- progress bar for long-running tasks (reports, jobs, etc.)
+
+3rd phase implementation
+- connection to a persistent MySql DB
+- HTML-scraping in lyrx4u-ext
+- batch framework for jobs (using glassfish Batch or Spring batch)
+- implement REST-interface for lyrics library

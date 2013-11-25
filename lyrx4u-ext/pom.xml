@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.andrey.lyrx4u</groupId>
+  <artifactId>lyrx4u-ext</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>LyrX4U external sources</name>
+  <description>Adapter for retrieving lyrics from external databases</description>
+  <build>
+    <sourceDirectory>src</sourceDirectory>  
+  </build>
+  <parent>
+  	<version>1.0.0</version>
+  	<artifactId>lyrx4u</artifactId>
+  	<groupId>net.andrey</groupId>
+  </parent>
+  <dependencies>
+  	<dependency>
+  		<groupId>net.sf.json-lib</groupId>
+  		<artifactId>json-lib</artifactId>
+  		<version>2.4</version>
+  		<classifier>jdk15</classifier>
+  	</dependency>
+  	<dependency>
+  		<groupId>commons-io</groupId>
+  		<artifactId>commons-io</artifactId>
+  		<version>2.4</version>
+  		<scope>compile</scope>
+  	</dependency>
+  	<dependency>
+	<groupId>commons-httpclient</groupId>
+	<artifactId>commons-httpclient</artifactId>
+	<version>3.1</version>
+</dependency>
+  </dependencies>
+</project>

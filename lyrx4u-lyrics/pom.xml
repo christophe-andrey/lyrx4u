@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.andrey.lyrx4u</groupId>
+	<artifactId>lyrx4u-lyrics</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>LyrX4U lyrics library</name>
+	<description>Management of the LyrX4U own local database of lyrics</description>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+
+	</build>
+	<parent>
+		<version>1.0.0</version>
+		<artifactId>lyrx4u</artifactId>
+		<groupId>net.andrey</groupId>
+	</parent>
+	<dependencies>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>4.2.7.SP1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+	</dependencies>
+</project>

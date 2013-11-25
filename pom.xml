@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.andrey</groupId>
+	<artifactId>lyrx4u</artifactId>
+	<packaging>pom</packaging>
+	<name>LyrX4U</name>
+	<version>1.0.0</version>
+	<description>Super POM for the LyrX4u application</description>
+	<developers>
+		<developer>
+			<id>andrey</id>
+			<name>Christophe Andrey</name>
+			<email>info@andrey.net</email>
+			<url>http://www.andrey.net</url>
+			<organization>Andrey dot net</organization>
+		</developer>
+	</developers>
+<dependencies>
+<dependency>
+  		<groupId>junit</groupId>
+  		<artifactId>junit</artifactId>
+  		<version>4.11</version>
+  	</dependency>
+  </dependencies>
+<build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+    </plugins>
+</build>
+</project>

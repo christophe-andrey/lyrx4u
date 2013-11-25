@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_i9AtYEhwEeOjC_jddNDESA" elementId="org.eclipse.e4.ide.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_i9AtYUhwEeOjC_jddNDESA" elementId="lyrx4u.window.main" label="LyrX4U" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_bf0REE4YEeObtdz7kP_kKg" elementId="lyrx4u.perspectivestack.main" selectedElement="_cFw2wE4YEeObtdz7kP_kKg">
+      <children xsi:type="advanced:Perspective" xmi:id="_cFw2wE4YEeObtdz7kP_kKg" elementId="lyrx4u.perspective.files" selectedElement="_1fsTcE4YEeObtdz7kP_kKg" label="Music files" tooltip="Music files">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_1fsTcE4YEeObtdz7kP_kKg" elementId="lyrx4u.partsashcontainer.files" horizontal="true">
+          <children xsi:type="basic:Part" xmi:id="_75bcsE4YEeObtdz7kP_kKg" elementId="lyrx4u.part.files.tree" containerData="2" contributionURI="bundleclass://LyrX4U/net.andrey.lyrx4u.client.rcp.views.file.RepositoryTreeView" label="File tree" tooltip="Music files in a tree of directories"/>
+          <children xsi:type="basic:Part" xmi:id="_-TnAIE4YEeObtdz7kP_kKg" elementId="lyrx4u.part.files.lyric" containerData="4" label="Lyric" tooltip="Editable lyrics of a selected music file, together with buttons for editing the lyrics of a selected music file"/>
+          <children xsi:type="basic:Part" xmi:id="_-x5eoE4YEeObtdz7kP_kKg" elementId="lyrx4u.part.files.properties" containerData="2" label="Music file properties" tooltip="Properties of a selected music file"/>
+        </children>
+      </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_iZthEE4YEeObtdz7kP_kKg" elementId="lyrx4u.perspective.library" label="Lyric library" tooltip="Lyric library">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_Urw4cE4aEeObtdz7kP_kKg" elementId="lyrx4u.partsashcontainer.library">
+          <children xsi:type="basic:Part" xmi:id="_XuCWoE4aEeObtdz7kP_kKg" elementId="lyrx4u.part.search" containerData="3" label="Search buttons" tooltip="Buttons for searching a song"/>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_YPv8kE4aEeObtdz7kP_kKg" elementId="lyrx4u.partsashcontainer.search_results" containerData="7" horizontal="true">
+            <children xsi:type="basic:Part" xmi:id="_gd_JUE4aEeObtdz7kP_kKg" elementId="lyrx4u.part.library.search_results" containerData="4" contributionURI="bundleclass://LyrX4U/net.andrey.lyrx4u.client.rcp.views.library.LibraryTreeView" label="Search results" tooltip="Search results organized in a tree"/>
+            <children xsi:type="basic:Part" xmi:id="_hACGcE4aEeObtdz7kP_kKg" elementId="lyrx4u.part.library.lyric" containerData="6" label="Lyrics" tooltip="Lyrics of a selected song"/>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_gyE04E4YEeObtdz7kP_kKg" elementId="lyrx4u.perspective.jobs" label="Jobs and reports" tooltip="Jobs and reports">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_CrZqUE4aEeObtdz7kP_kKg" elementId="lyrx4u.partsashcontainer.jobs" horizontal="true">
+          <children xsi:type="basic:Part" xmi:id="_GLbbgE4aEeObtdz7kP_kKg" elementId="lyrx4u.part.jobs.list" containerData="4" label="Job list" tooltip="Jobs started so far"/>
+          <children xsi:type="basic:PartStack" xmi:id="_PZo3gE4aEeObtdz7kP_kKg" elementId="lyrx4u.partstack.jobs" containerData="6"/>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_1nItUE4aEeObtdz7kP_kKg" elementId="lyrx4u.menu.main">
+      <children xsi:type="menu:Menu" xmi:id="_5oXuIE4aEeObtdz7kP_kKg" elementId="lyrx4u.menu.file" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_8LubsE4aEeObtdz7kP_kKg" elementId="lyrx4u.handledmenuitem.open" label="Open music directory..." tooltip="Open a music directory" command="_9QIv8E4jEeOIHZRIaiL8xw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_lVvo0E4iEeOIHZRIaiL8xw" elementId="lyrx4u.handledmenuitem.quit" label="Quit" tooltip="Quit the LyrX4U application" command="_8jlL8E4jEeOIHZRIaiL8xw"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_pZofkE4jEeOIHZRIaiL8xw" elementId="lyrx4u.menu.tools" label="Tools">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_pZofkU4jEeOIHZRIaiL8xw" elementId="lyrx4u.handledmenuitem.report" label="Report" tooltip="Reports about the selected item in the perspective" command="_HjeA8E4kEeOIHZRIaiL8xw"/>
+      </children>
+    </mainMenu>
+  </children>
+  <handlers xmi:id="_Owu44E4kEeOIHZRIaiL8xw" elementId="lyrx4u.handlers.file.open" contributionURI="bundleclass://LyrX4U/net.andrey.lyrx4u.client.rcp.handlers.OpenHandler" command="_9QIv8E4jEeOIHZRIaiL8xw"/>
+  <handlers xmi:id="_Pf9WYE4kEeOIHZRIaiL8xw" elementId="lyrx4u.handlers.quit" contributionURI="bundleclass://LyrX4U/net.andrey.lyrx4u.client.rcp.handlers.QuitHandler" command="_8jlL8E4jEeOIHZRIaiL8xw"/>
+  <handlers xmi:id="_SvLEYE4kEeOIHZRIaiL8xw" elementId="lyrx4u.handlers.report" contributionURI="bundleclass://LyrX4U/net.andrey.lyrx4u.client.rcp.handlers.ReportHandler" command="_HjeA8E4kEeOIHZRIaiL8xw"/>
+  <bindingTables xmi:id="_BcxaYE4iEeOIHZRIaiL8xw" elementId="lyrx4u.bindingtable.0" bindingContext="_U8LZYE4iEeOIHZRIaiL8xw">
+    <bindings xmi:id="_NqulAE4iEeOIHZRIaiL8xw" keySequence="M1+Q" command="_8jlL8E4jEeOIHZRIaiL8xw"/>
+    <bindings xmi:id="_UDQ0YE4iEeOIHZRIaiL8xw" keySequence="M1+O" command="_9QIv8E4jEeOIHZRIaiL8xw"/>
+  </bindingTables>
+  <rootContext xmi:id="_U8LZYE4iEeOIHZRIaiL8xw" elementId="org.eclipse.ui.contexts.allPerspectives" name="In all perspectives">
+    <children xmi:id="_U8LZYU4iEeOIHZRIaiL8xw" elementId="org.eclipse.ui.contexts.files" name="In the music files perspective"/>
+    <children xmi:id="_bhKwYE4iEeOIHZRIaiL8xw" elementId="org.eclipse.ui.contexts.jobs" name="In the jobs perspective"/>
+    <children xmi:id="_ebArUE4iEeOIHZRIaiL8xw" elementId="org.eclipse.ui.contexts.library" name="In the lyrics library perspective"/>
+  </rootContext>
+  <commands xmi:id="_8jlL8E4jEeOIHZRIaiL8xw" elementId="org.eclipse.ui.file.exit" commandName="quitCommand" description="Quit the application"/>
+  <commands xmi:id="_9QIv8E4jEeOIHZRIaiL8xw" elementId="lyrx4u.commands.file.open" commandName="openCommand" description="Open a new music file repository"/>
+  <commands xmi:id="_HjeA8E4kEeOIHZRIaiL8xw" elementId="lyrx4u.commands.report" commandName="reportCommand" description="Produces a report about the selected perspective"/>
+  <addons xmi:id="_i9AtYkhwEeOjC_jddNDESA" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_i9AtY0hwEeOjC_jddNDESA" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_i9AtZEhwEeOjC_jddNDESA" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_i9AtZUhwEeOjC_jddNDESA" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_i9AtZkhwEeOjC_jddNDESA" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_i9AtZ0hwEeOjC_jddNDESA" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_i9AtaEhwEeOjC_jddNDESA" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>

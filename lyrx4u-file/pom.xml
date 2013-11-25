@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.andrey.lyrx4u</groupId>
+  <artifactId>lyrx4u-file</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>LyrX4U Music file manipulation</name>
+  <description>Manipulation of a collection of music files such as MP3</description>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+
+  </build>
+  <parent>
+  	<version>1.0.0</version>
+  	<artifactId>lyrx4u</artifactId>
+  	<groupId>net.andrey</groupId>
+  </parent>
+  <dependencies>
+  	<dependency>
+  		<groupId>org</groupId>
+  		<artifactId>jaudiotagger</artifactId>
+  		<version>2.0.3</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>commons-io</groupId>
+  		<artifactId>commons-io</artifactId>
+  		<version>2.4</version>
+  		<scope>compile</scope>
+  	</dependency>
+  </dependencies>
+</project>
